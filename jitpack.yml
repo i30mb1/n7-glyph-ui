@@ -1,2 +1,4 @@
 jdk:
   - openjdk17
+install:
+  - ./gradlew :n7-glyph-ui:publishToMavenLocal -PlibVersion=$VERSION --console=plain

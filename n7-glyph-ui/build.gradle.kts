@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.i30mb1"
-version = "0.1.0"
+version = providers.gradleProperty("libVersion").getOrElse("0.1.1")
 
 android {
     namespace = "n7.glyph.ui"
