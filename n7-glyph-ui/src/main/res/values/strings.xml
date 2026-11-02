@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="n7_made_for_glyph_matrix" translatable="false">Made for Glyph Matrix</string>
+    <string name="n7_more_from">More from n7</string>
+    <string name="n7_app_snake" translatable="false">Glyph Snake</string>
+    <string name="n7_app_snake_summary">Feed the hungry snake! Tilt your phone to move.</string>
+    <string name="n7_app_flappy" translatable="false">Flappy Box</string>
+    <string name="n7_app_flappy_summary">Tilt-controlled arcade game on the Glyph Matrix.</string>
+</resources>

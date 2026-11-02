@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="n7_more_from">Ещё от n7</string>
+    <string name="n7_app_snake_summary">Накорми голодную змейку! Наклоняй телефон, чтобы двигаться.</string>
+    <string name="n7_app_flappy_summary">Аркада с управлением наклоном на Glyph Matrix.</string>
+</resources>
