@@ -14,4 +14,10 @@
     <string name="n7_app_safe_summary">Turn the phone like a safe dial and crack the code.</string>
     <string name="n7_app_challenge" translatable="false">Glyph Challenge</string>
     <string name="n7_app_challenge_summary">Jump, react and shake for big numbers. Duel a friend.</string>
+    <string name="n7_app_party" translatable="false">Glyph Party</string>
+    <string name="n7_app_party_summary">Pass the dragon gently, obey the commander\'s orders.</string>
+    <string name="n7_app_guess" translatable="false">Glyph Guess</string>
+    <string name="n7_app_guess_summary">Phone on your forehead: guess the picture, tilt to answer.</string>
+    <string name="n7_app_fishing" translatable="false">Glyph Fishing</string>
+    <string name="n7_app_fishing_summary">Tip to cast, flick on the bite, hold to reel in.</string>
 </resources>

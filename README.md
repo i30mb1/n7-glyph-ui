@@ -10,8 +10,8 @@ The design source is the **N7 Glyph** design system on claude.ai; this library m
 | `n7.glyph.ui.theme` | `N7GlyphTheme`, colour tokens `N7Colors`, `N7Spacing`, `N7Radius`, text styles `N7Type`, fonts Doto / Geist / Geist Mono |
 | `n7.glyph.ui.matrix` | `GlyphMatrixSpec` (real round outline of the Phone (3) matrix), `Cell`, `Frames` (`line`, `snake`, family icons), `MatrixCanvas` (25x25 frame drawing, `RIM` loop), `MatrixFont` (`Small` 3x5, `Big` 5x7) |
 | `n7.glyph.ui.toy` | SDK-free toy runtime: `ToyEngine`, `Motion`/`Facing`, `Haptic`, `ToySensors`, `ToyMotionSource`, `ToyHaptics`, `ToyStage`, `GlyphHoldButton` |
-| `n7.glyph.ui.components` | `GlyphMatrix`, `DotHeadline`, `SignatureLabel`, `N7Button`, `N7Stepper`, `N7Card`, `N7Divider`, `ScoreDisplay`, `SectionLabel`, `ToyCard` |
-| `n7.glyph.ui.family` | `N7Apps` (every family app) and `MoreFromN7` (cross-promotion list that opens Google Play) |
+| `n7.glyph.ui.components` | `GlyphMatrix`, `DotHeadline`, `SignatureLabel`, `N7Button`, `N7Stepper`, `N7Card`, `N7Divider`, `ScoreDisplay`, `SectionLabel`, `ToyCard`, `N7PagerDots` (dots under anything swiped page by page) |
+| `n7.glyph.ui.family` | `N7Apps` (every family app) and `MoreFromN7` (cross-promotion: one card at a time, swiped sideways, dots under it; a card opens Google Play) |
 
 ## Rules
 

@@ -22,6 +22,9 @@ APPS = [
     ("Flame", "glyph-flame"),
     ("Safe", "glyph-safe"),
     ("Challenge", "glyph-challenge"),
+    ("Party", "glyph-party"),
+    ("Guess", "glyph-guess"),
+    ("Fishing", "glyph-fishing"),
 ]
 
 # Brightness steps of a picture row: '.' is dark, '1'..'9' are 0.2..1.0.
