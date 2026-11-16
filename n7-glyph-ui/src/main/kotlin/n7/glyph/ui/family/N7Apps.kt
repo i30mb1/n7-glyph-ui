@@ -49,11 +49,8 @@ public object N7Apps {
     public val Guess: N7App = N7App("n7.glyphguess", R.string.n7_app_guess, R.string.n7_app_guess_summary, FamilyIcons.Guess, FamilyIcons.GuessSignal)
     public val Fishing: N7App = N7App("n7.glyphfishing", R.string.n7_app_fishing, R.string.n7_app_fishing_summary, FamilyIcons.Fishing, FamilyIcons.FishingSignal)
 
-    /**
-     * Only apps whose Google Play page is live belong here: a card opens that page.
-     * Party, Guess and Fishing join once Google Play has approved them.
-     */
-    public val all: List<N7App> = listOf(Pet, Snake, FlappyBox, Flame, Safe, Challenge)
+    /** Every family app on Google Play: a card opens its store page. */
+    public val all: List<N7App> = listOf(Pet, Snake, FlappyBox, Flame, Safe, Challenge, Party, Guess, Fishing)
 
     /** The family without the app that is asking. */
     public fun others(currentPackage: String): List<N7App> = all.filter { it.packageName != currentPackage }
