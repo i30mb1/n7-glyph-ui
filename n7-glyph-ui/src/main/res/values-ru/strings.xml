@@ -3,4 +3,8 @@
     <string name="n7_more_from">Ещё от n7</string>
     <string name="n7_app_snake_summary">Накорми голодную змейку! Наклоняй телефон, чтобы двигаться.</string>
     <string name="n7_app_flappy_summary">Аркада с управлением наклоном на Glyph Matrix.</string>
+    <string name="n7_app_pet_summary">Каждый день новое яйцо. Вылупи и собери 18 питомцев.</string>
+    <string name="n7_app_flame_summary">Зажми и загадай желание, отпусти и задуй свечу.</string>
+    <string name="n7_app_safe_summary">Крути телефон как диск сейфа и взломай код.</string>
+    <string name="n7_app_challenge_summary">Прыгай, реагируй и тряси ради рекордов. Дуэль с другом.</string>
 </resources>

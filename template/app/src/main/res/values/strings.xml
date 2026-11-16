@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name" translatable="false">Glyph Template</string>
+    <string name="toy_name" translatable="false">Glyph Template</string>
+    <!-- One line under the app name: what the app is. 40 characters at most so it stays on one line. -->
+    <string name="tagline">A ball that rolls with your phone.</string>
+    <string name="toy_summary">Tilt the phone and the ball rolls. Hold the Glyph button to charge a ring, let go to fire it.</string>
+
+    <string name="setup_title">Step 1. Turn on the toy</string>
+    <string name="setup_text">Without it the toy will not show up on the back of your phone. Add Glyph Template to your Glyph Toys.</string>
+    <string name="setup_button">Turn on</string>
+
+    <string name="stage_hold">Hold like the Glyph button</string>
+    <string name="stage_hint">Tilt the phone. Hold, then let go.</string>
+    <string name="stage_description">The toy, live</string>
+
+    <string name="how_title">How it works</string>
+    <string name="how_1">Turn on Glyph Template in Glyph Toys</string>
+    <string name="how_2">Tilt the phone: the ball rolls and bounces off the edge</string>
+    <string name="how_3">Hold the Glyph button to charge the rim, let go to fire the ring</string>
+
+    <string name="glyph_toys">Glyph Toys</string>
+</resources>

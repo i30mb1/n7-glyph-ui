@@ -21,7 +21,7 @@ import n7.glyph.ui.theme.N7Colors
 import n7.glyph.ui.theme.N7Radius
 import n7.glyph.ui.theme.N7Type
 
-/** A Glyph Toy row: matrix thumbnail, title, two-line summary. */
+/** A Glyph Toy row: matrix thumbnail, title, summary of up to three lines. */
 @Composable
 public fun ToyCard(
     title: String,
@@ -46,7 +46,7 @@ public fun ToyCard(
         Column(Modifier.weight(1f)) {
             Text(title, style = N7Type.Title, color = N7Colors.Ink)
             if (summary != null) {
-                Text(summary, style = N7Type.BodyS, color = N7Colors.InkMuted, maxLines = 2, overflow = TextOverflow.Ellipsis)
+                Text(summary, style = N7Type.BodyS, color = N7Colors.InkMuted, maxLines = 3, overflow = TextOverflow.Ellipsis)
             }
         }
     }

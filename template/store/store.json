@@ -1,0 +1,12 @@
+{
+  "name": "Glyph Template",
+  "icon": { "frame": "icon", "signal": [[11, 11]] },
+  "toys": [ { "drawable": "toy_preview", "frame": "icon", "signal": [] } ],
+  "feature": { "title": ["GLYPH", "TEMPLATE"], "sub": "A ball that rolls on the back of your Nothing Phone (3).", "frame": "roll" },
+  "shots": [
+    { "layout": "phone", "headline": ["TILT", "IT"], "sub": "The ball rolls the way you tip the phone.", "frame": "roll" },
+    { "layout": "zoom", "headline": ["HOLD", "IT"], "sub": "Hold the Glyph button to charge the rim.", "frame": "charge" },
+    { "layout": "grid", "headline": ["LET", "GO"], "sub": "Let go and the ring flies out.", "frames": ["icon", "charge", "ring"], "labels": ["REST", "CHARGE", "FIRE"] },
+    { "layout": "steps", "headline": ["TURN", "IT ON"], "sub": "Add it to your Glyph Toys.", "steps": ["Open Glyph Toys", "Add Glyph Template", "Hold the Glyph button"], "frame": "icon" }
+  ]
+}

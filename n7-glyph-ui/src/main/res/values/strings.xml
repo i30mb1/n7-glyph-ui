@@ -6,4 +6,12 @@
     <string name="n7_app_snake_summary">Feed the hungry snake! Tilt your phone to move.</string>
     <string name="n7_app_flappy" translatable="false">Flappy Box</string>
     <string name="n7_app_flappy_summary">Tilt-controlled arcade game on the Glyph Matrix.</string>
+    <string name="n7_app_pet" translatable="false">Glyph Pet</string>
+    <string name="n7_app_pet_summary">A new egg every day. Hatch and collect 18 pets.</string>
+    <string name="n7_app_flame" translatable="false">Glyph Flame</string>
+    <string name="n7_app_flame_summary">Hold to make a wish, let go to blow out the candle.</string>
+    <string name="n7_app_safe" translatable="false">Glyph Safe</string>
+    <string name="n7_app_safe_summary">Turn the phone like a safe dial and crack the code.</string>
+    <string name="n7_app_challenge" translatable="false">Glyph Challenge</string>
+    <string name="n7_app_challenge_summary">Jump, react and shake for big numbers. Duel a friend.</string>
 </resources>

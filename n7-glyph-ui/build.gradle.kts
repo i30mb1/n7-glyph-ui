@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.i30mb1"
-version = providers.gradleProperty("libVersion").getOrElse("0.2.0")
+version = providers.gradleProperty("libVersion").getOrElse("0.3.0")
 
 android {
     namespace = "n7.glyph.ui"
@@ -17,6 +17,11 @@ android {
 
     buildFeatures {
         compose = true
+    }
+
+    testOptions {
+        // Robolectric tests of ToyStage and GlyphHoldButton need the library's fonts and the test activity.
+        unitTests.isIncludeAndroidResources = true
     }
 
     publishing {
@@ -41,8 +46,14 @@ dependencies {
     api(libs.compose.ui)
     api(libs.compose.foundation)
     api(libs.compose.material3)
+    implementation(libs.lifecycle.runtime.compose)
     implementation(libs.compose.ui.tooling.preview)
     debugImplementation(libs.compose.ui.tooling)
+    testImplementation(libs.junit)
+    testImplementation(libs.robolectric)
+    testImplementation(platform(libs.compose.bom))
+    testImplementation(libs.compose.ui.test.junit4)
+    testImplementation(libs.compose.ui.test.manifest)
 }
 
 afterEvaluate {

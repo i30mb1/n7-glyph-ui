@@ -33,7 +33,13 @@ public object N7Apps {
     public val Snake: N7App = N7App("n7.snake", R.string.n7_app_snake, R.string.n7_app_snake_summary, Frames.SnakeIcon, Frames.SnakeIconSignal)
     public val FlappyBox: N7App = N7App("n7.glyphicons", R.string.n7_app_flappy, R.string.n7_app_flappy_summary, Frames.FlappyIcon, Frames.FlappyIconSignal)
 
-    public val all: List<N7App> = listOf(Snake, FlappyBox)
+    public val Pet: N7App = N7App("n7.glyphpet", R.string.n7_app_pet, R.string.n7_app_pet_summary, FamilyIcons.Pet, FamilyIcons.PetSignal)
+    public val Flame: N7App = N7App("n7.glyphflame", R.string.n7_app_flame, R.string.n7_app_flame_summary, FamilyIcons.Flame, FamilyIcons.FlameSignal)
+    public val Safe: N7App = N7App("n7.glyphsafe", R.string.n7_app_safe, R.string.n7_app_safe_summary, FamilyIcons.Safe, FamilyIcons.SafeSignal)
+    public val Challenge: N7App = N7App("n7.glyphchallenge", R.string.n7_app_challenge, R.string.n7_app_challenge_summary, FamilyIcons.Challenge, FamilyIcons.ChallengeSignal)
+
+    /** Only apps whose Google Play page is live belong here: a card opens that page. */
+    public val all: List<N7App> = listOf(Pet, Snake, FlappyBox, Flame, Safe, Challenge)
 
     /** The family without the app that is asking. */
     public fun others(currentPackage: String): List<N7App> = all.filter { it.packageName != currentPackage }

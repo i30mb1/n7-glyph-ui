@@ -6,6 +6,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import n7.glyph.ui.matrix.Cell
@@ -15,7 +16,7 @@ import n7.glyph.ui.theme.N7Colors
 /**
  * The Phone (3) Glyph Matrix: 25x25 LEDs in the device's round outline, unlit cells visible.
  *
- * @param cells lit LEDs; level 1 = full white.
+ * @param cells lit LEDs; level 0..1 runs from an unlit LED to full white.
  * @param signal cells drawn in [N7Colors.Signal]. Icons and brand art only: the real LEDs are white.
  * @param lens draw the dark glass disc and rim behind the LEDs.
  * @param glow soft halo around lit LEDs.
@@ -55,8 +56,9 @@ public fun GlyphMatrix(
                     key in red -> drawCircle(N7Colors.Signal, r, p)
                     level != null -> {
                         if (glow) drawCircle(N7Colors.LedOn.copy(alpha = 0.22f * level), r * 2.1f, p)
-                        val base = if (level >= 0.9f) N7Colors.LedOn else N7Colors.LedMid
-                        drawCircle(base.copy(alpha = 0.55f + 0.45f * level), r, p)
+                        // From an unlit LED to full white, straight with the level: a dim LED next to a bright one
+                        // must look as different here as it does on the phone.
+                        drawCircle(lerp(N7Colors.LedOff, N7Colors.LedOn, level.coerceIn(0f, 1f)), r, p)
                     }
                     else -> drawCircle(N7Colors.LedOff, r, p)
                 }

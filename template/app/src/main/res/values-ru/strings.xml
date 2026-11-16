@@ -1,0 +1,19 @@
+<resources>
+    <string name="tagline">Шарик, который катится за телефоном.</string>
+    <string name="toy_summary">Наклони телефон, и шарик покатится. Зажми кнопку Glyph, чтобы зарядить кольцо, отпусти, и оно вылетит.</string>
+
+    <string name="setup_title">Шаг 1. Включи игрушку</string>
+    <string name="setup_text">Без этого игрушки не будет видно на задней панели. Добавь Glyph Template в Glyph-игрушки.</string>
+    <string name="setup_button">Включить</string>
+
+    <string name="stage_hold">Держи, как кнопку Glyph</string>
+    <string name="stage_hint">Наклони телефон. Зажми и отпусти.</string>
+    <string name="stage_description">Игрушка вживую</string>
+
+    <string name="how_title">Как это работает</string>
+    <string name="how_1">Включи Glyph Template в Glyph-игрушках</string>
+    <string name="how_2">Наклони телефон: шарик катится и отскакивает от края</string>
+    <string name="how_3">Зажми кнопку Glyph, чтобы зарядить край, отпусти, и кольцо вылетит</string>
+
+    <string name="glyph_toys">Glyph-игрушки</string>
+</resources>

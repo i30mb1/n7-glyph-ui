@@ -1,0 +1,37 @@
+/* N7 Glyph store kit: what a store picture needs on top of the design system (tokens.css + components/bundle.css).
+   Colours and fonts come from the tokens; the numbers are pixels on the 1080x1920 / 1024x500 / 512x512 canvases. */
+
+html, body { margin: 0; padding: 0; overflow: hidden; background: var(--ground); }
+
+/* The picture, top-left of the page. render.py crops the capture to it. */
+#n7k-pic { position: absolute; left: 0; top: 0; overflow: hidden; background: var(--ground); }
+/* Under the picture: magenta until page.js has finished, then green, or red on an error. render.py reads this pixel. */
+#n7k-status { position: absolute; left: 0; width: 40px; height: 40px; background: #ff00ff; }
+
+.n7k-abs { position: absolute; }
+
+/* phone: the zoomed matrix sits on a black disc 10px wider than itself, so it reads against the white phone. */
+.n7k-zoom { position: absolute; padding: 10px; border-radius: 50%; background: var(--ground); }
+
+/* grid: mono caps label under each matrix (Geist Mono caps at screenshot scale; weight 400 as in Glyph Pet's shots). */
+.n7k-label { position: absolute; text-align: center; white-space: nowrap; font-family: var(--font-mono); font-weight: 400;
+  font-size: 28px; line-height: 36px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+.n7k-label-dim { color: var(--ink-subtle); }
+
+/* screen: a real screenshot in a plain rounded frame. */
+.n7k-screen { position: absolute; box-sizing: content-box; border: 2px solid var(--lens-rim); border-radius: 56px; overflow: hidden; background: var(--ground); }
+.n7k-screen img { display: block; width: 100%; height: auto; }
+
+/* steps: numbered lines, mono number and body text, hairlines between them. */
+.n7k-steps { position: absolute; left: 80px; width: 920px; }
+.n7k-step { display: flex; align-items: baseline; gap: 36px; padding: 30px 0; border-top: 2px solid var(--hairline); }
+.n7k-step:last-child { border-bottom: 2px solid var(--hairline); }
+.n7k-step-n { flex: none; width: 60px; font-family: var(--font-mono); font-weight: 500; font-size: 28px; letter-spacing: .12em; color: var(--ink-subtle); }
+.n7k-step-t { font-family: var(--font-sans); font-size: 44px; line-height: 56px; color: var(--ink); }
+
+/* Feature graphic 1024x500: the same top block as a screenshot, smaller, beside the phone. */
+.n7k-feature { position: relative; width: 1024px; height: 500px; overflow: hidden; background: var(--ground); color: var(--ink); }
+.n7k-feature-text { position: absolute; left: 64px; top: 60px; }
+.n7k-feature-hl { margin-top: 27px; font-size: 104px; }
+.n7k-feature-hl.n7-hl-cyr-all { font-size: 64px; }
+.n7k-feature-sub { margin-top: 28px; max-width: 380px; font-size: 22px; line-height: 30px; color: var(--ink-muted); }
