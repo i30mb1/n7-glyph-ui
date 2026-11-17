@@ -10,4 +10,10 @@
     <string name="n7_app_party_summary">Передай дракона бережно, выполняй приказы командира.</string>
     <string name="n7_app_guess_summary">Телефон на лоб: угадай картинку и наклони голову.</string>
     <string name="n7_app_fishing_summary">Наклони — заброс, рывок — подсечка, зажми — тяни.</string>
+    <string name="n7_supporter_title">Supporter</string>
+    <string name="n7_supporter_pitch">Нравится игра? Угости разработчика кофе. Игра в любом случае остаётся бесплатной.</string>
+    <string name="n7_supporter_thanks">Спасибо за кофе!</string>
+    <string name="n7_supporter_perk_matrix">Чашка кофе на матрице и искры по ободу при каждом запуске игрушки</string>
+    <string name="n7_supporter_buy">Угостить кофе · %1$s</string>
+    <string name="n7_supporter_unavailable">Скоро в Google Play</string>
 </resources>

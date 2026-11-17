@@ -12,6 +12,8 @@ import android.util.Log
 import com.nothing.ketchum.Glyph
 import com.nothing.ketchum.GlyphMatrixManager
 import com.nothing.ketchum.GlyphToy
+import n7.glyph.ui.support.Supporter
+import n7.glyph.ui.support.SupporterToy
 import n7.glyph.ui.toy.Facing
 import n7.glyph.ui.toy.ToyEngine
 import n7.glyph.ui.toy.ToyHaptics
@@ -92,7 +94,8 @@ abstract class GlyphToyService : Service(), GlyphMatrixManager.Callback {
     override fun onBind(intent: Intent?): IBinder {
         owner?.takeIf { it !== this }?.closeLink(handover = true)
         owner = this
-        engine = createEngine()
+        // Supporters get the coffee once after the purchase and sparkles round the rim at every start; others the toy as is.
+        engine = SupporterToy(createEngine(), Supporter.state(applicationContext))
         motion = ToyMotionSource(this, Facing.BACK, engine.sensors, engine.sensorHz) { sample ->
             samples++
             engine.onMotion(sample)

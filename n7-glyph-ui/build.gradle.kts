@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.i30mb1"
-version = providers.gradleProperty("libVersion").getOrElse("0.3.2")
+version = providers.gradleProperty("libVersion").getOrElse("0.4.0")
 
 android {
     namespace = "n7.glyph.ui"
@@ -47,6 +47,8 @@ dependencies {
     api(libs.compose.foundation)
     api(libs.compose.material3)
     implementation(libs.lifecycle.runtime.compose)
+    // Supporter: the one in-app purchase of every n7 app.
+    implementation(libs.billing)
     implementation(libs.compose.ui.tooling.preview)
     debugImplementation(libs.compose.ui.tooling)
     testImplementation(libs.junit)

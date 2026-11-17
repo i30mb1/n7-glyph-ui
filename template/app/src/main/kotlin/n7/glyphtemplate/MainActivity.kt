@@ -43,6 +43,7 @@ import n7.glyph.ui.components.N7Card
 import n7.glyph.ui.components.SectionLabel
 import n7.glyph.ui.components.SignatureLabel
 import n7.glyph.ui.family.MoreFromN7
+import n7.glyph.ui.support.SupporterSection
 import n7.glyph.ui.theme.N7Colors
 import n7.glyph.ui.theme.N7GlyphTheme
 import n7.glyph.ui.theme.N7Type
@@ -147,6 +148,9 @@ private fun MainScreen(toyOpenedBefore: Boolean, onOpenGlyphToys: () -> Unit) {
                     modifier = Modifier.fillMaxWidth(),
                 )
             }
+
+            // Supporter: the coffee and the sparkles come with the library; name this app's own small extra here.
+            SupporterSection(perks = listOf(stringResource(R.string.supporter_perk)))
 
             MoreFromN7(Modifier.fillMaxWidth())
 
