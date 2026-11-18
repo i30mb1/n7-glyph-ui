@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.i30mb1"
-version = providers.gradleProperty("libVersion").getOrElse("0.4.0")
+version = providers.gradleProperty("libVersion").getOrElse("0.4.1")
 
 android {
     namespace = "n7.glyph.ui"
@@ -49,6 +49,8 @@ dependencies {
     implementation(libs.lifecycle.runtime.compose)
     // Supporter: the one in-app purchase of every n7 app.
     implementation(libs.billing)
+    // Billing pulls androidx.fragment 1.1.0 through Play services, Play Console flags it as outdated.
+    implementation(libs.fragment)
     implementation(libs.compose.ui.tooling.preview)
     debugImplementation(libs.compose.ui.tooling)
     testImplementation(libs.junit)
