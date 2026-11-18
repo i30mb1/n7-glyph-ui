@@ -5,11 +5,11 @@ plugins {
 }
 
 group = "com.github.i30mb1"
-version = providers.gradleProperty("libVersion").getOrElse("0.4.1")
+version = providers.gradleProperty("libVersion").getOrElse("0.4.2")
 
 android {
     namespace = "n7.glyph.ui"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         minSdk = 33
