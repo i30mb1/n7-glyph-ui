@@ -17,7 +17,7 @@
     <string name="n7_app_party" translatable="false">Glyph Party</string>
     <string name="n7_app_party_summary">Pass the dragon gently, obey the commander\'s orders.</string>
     <string name="n7_app_guess" translatable="false">Glyph Guess</string>
-    <string name="n7_app_guess_summary">Phone on your forehead: guess the picture, tilt to answer.</string>
+    <string name="n7_app_guess_summary">Phone on your forehead: hold to score, shake to skip.</string>
     <string name="n7_app_fishing" translatable="false">Glyph Fishing</string>
     <string name="n7_app_fishing_summary">Tip to cast, flick on the bite, hold to reel in.</string>
     <string name="n7_supporter_title">Supporter</string>
@@ -26,4 +26,5 @@
     <string name="n7_supporter_perk_matrix">A cup of coffee on the matrix and sparkles running round the rim every time the toy starts</string>
     <string name="n7_supporter_buy">Buy a coffee · %1$s</string>
     <string name="n7_supporter_unavailable">Coming soon on Google Play</string>
+    <string name="n7_supporter_close">Close</string>
 </resources>

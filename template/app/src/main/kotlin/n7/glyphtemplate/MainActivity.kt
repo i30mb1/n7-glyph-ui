@@ -9,6 +9,7 @@ import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -43,7 +44,7 @@ import n7.glyph.ui.components.N7Card
 import n7.glyph.ui.components.SectionLabel
 import n7.glyph.ui.components.SignatureLabel
 import n7.glyph.ui.family.MoreFromN7
-import n7.glyph.ui.support.SupporterSection
+import n7.glyph.ui.support.SupporterCorner
 import n7.glyph.ui.theme.N7Colors
 import n7.glyph.ui.theme.N7GlyphTheme
 import n7.glyph.ui.theme.N7Type
@@ -105,9 +106,14 @@ private fun MainScreen(toyOpenedBefore: Boolean, onOpenGlyphToys: () -> Unit) {
             verticalArrangement = Arrangement.spacedBy(24.dp),
         ) {
             // The name and, right under it, one line that says what the app is: the same pair as on the store pictures.
-            Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                DotHeadline(lines = listOf("GLYPH", "TEMPLATE"), fontSize = 48.sp)
-                Text(stringResource(R.string.tagline), style = N7Type.Body, color = N7Colors.InkMuted)
+            // Supporter: the "$" in the top-right corner, the same in every n7 app. The coffee and the sparkles come
+            // with the library; name this app's own small extra here.
+            Box(Modifier.fillMaxWidth()) {
+                Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                    DotHeadline(lines = listOf("GLYPH", "TEMPLATE"), fontSize = 48.sp)
+                    Text(stringResource(R.string.tagline), style = N7Type.Body, color = N7Colors.InkMuted)
+                }
+                SupporterCorner(perks = listOf(stringResource(R.string.supporter_perk)), modifier = Modifier.align(Alignment.TopEnd))
             }
 
             if (!toyOpened) {
@@ -148,9 +154,6 @@ private fun MainScreen(toyOpenedBefore: Boolean, onOpenGlyphToys: () -> Unit) {
                     modifier = Modifier.fillMaxWidth(),
                 )
             }
-
-            // Supporter: the coffee and the sparkles come with the library; name this app's own small extra here.
-            SupporterSection(perks = listOf(stringResource(R.string.supporter_perk)))
 
             MoreFromN7(Modifier.fillMaxWidth())
 

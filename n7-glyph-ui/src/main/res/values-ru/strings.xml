@@ -8,7 +8,7 @@
     <string name="n7_app_safe_summary">Крути телефон как диск сейфа и взломай код.</string>
     <string name="n7_app_challenge_summary">Прыгай, реагируй и тряси ради рекордов. Дуэль с другом.</string>
     <string name="n7_app_party_summary">Передай дракона бережно, выполняй приказы командира.</string>
-    <string name="n7_app_guess_summary">Телефон на лоб: угадай картинку и наклони голову.</string>
+    <string name="n7_app_guess_summary">Телефон на лоб: зажми — очко, встряхни — пропуск.</string>
     <string name="n7_app_fishing_summary">Наклони — заброс, рывок — подсечка, зажми — тяни.</string>
     <string name="n7_supporter_title">Supporter</string>
     <string name="n7_supporter_pitch">Нравится игра? Угости разработчика кофе. Игра в любом случае остаётся бесплатной.</string>
@@ -16,4 +16,5 @@
     <string name="n7_supporter_perk_matrix">Чашка кофе на матрице и искры по ободу при каждом запуске игрушки</string>
     <string name="n7_supporter_buy">Угостить кофе · %1$s</string>
     <string name="n7_supporter_unavailable">Скоро в Google Play</string>
+    <string name="n7_supporter_close">Закрыть</string>
 </resources>
